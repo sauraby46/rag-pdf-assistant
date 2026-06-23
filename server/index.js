@@ -125,3 +125,6 @@ const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
     console.log(`Server is running on port: ${PORT}`);
 });
+
+// Start the BullMQ worker inside the same process to run everything for free!
+import './worker.js';
