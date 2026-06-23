@@ -2,7 +2,7 @@
 
 An intelligent, secure **Retrieval-Augmented Generation (RAG)** application that allows users to upload PDF documents, index them semantically, and have contextual, hallucination-free conversations based on the uploaded content.
 
-🚀 **Live Deployment:** [RAG PDF Assistant](https://rag-pdf-assistant-iso6eao1l-wolf19.vercel.app/)
+🚀 **Live Deployment:** [RAG PDF Assistant](https://rag-pdf-assistant-dxdpqu01z-wolf19.vercel.app/)
 ⚙️ **Backend API Server:** [https://rag-pdf-backend-penv.onrender.com](https://rag-pdf-backend-penv.onrender.com)
 
 ---
