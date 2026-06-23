@@ -7,6 +7,12 @@ import { QdrantVectorStore } from "@langchain/qdrant";
 import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import { GoogleGenAI } from '@google/genai';
 import { clerkMiddleware, getAuth } from '@clerk/express';
+import fs from 'fs';
+
+// Ensure the uploads directory exists on startup (needed for cloud platforms since uploads/ is git-ignored)
+if (!fs.existsSync('uploads/')) {
+    fs.mkdirSync('uploads/', { recursive: true });
+}
 
 const ai = new GoogleGenAI({
     apiKey: process.env.GOOGLE_API_KEY,
