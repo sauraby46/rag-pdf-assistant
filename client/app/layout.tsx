@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import {
   ClerkProvider,
-  SignedIn,
-  SignedOut,
+  Show,
   SignUp,
   // SignInButton,
   // SignUpButton,
@@ -38,12 +37,12 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ClerkProvider>
-              <SignedOut>
+              <Show when="signed-out">
                 <section className= "flex min-h-screen w-screen items-center justify-center">
                   <SignUp />
                 </section>
-              </SignedOut>
-            <SignedIn>
+              </Show>
+            <Show when="signed-in">
               <div className="flex min-h-screen flex-col bg-slate-100">
                 <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
                   <div className="mx-auto flex h-16 w-full max-w-[1600px] items-center justify-between px-4 md:px-6">
@@ -64,7 +63,7 @@ export default function RootLayout({
                 </header>
                 <main className="flex-1">{children}</main>
               </div>
-            </SignedIn>
+            </Show>
         </ClerkProvider>
       </body>
     </html>
