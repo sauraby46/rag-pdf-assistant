@@ -1,0 +1,18 @@
+# Node dependencies and builds
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Environment files and credentials
+.env
+.env*.local
+.clerk/
+
+# Local upload artifacts
+server/uploads/
+
+# System files
+.DS_Store
+Thumbs.db

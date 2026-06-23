@@ -1,0 +1,23 @@
+# Environment variables
+.env
+.env*.local
+.env*.development.local
+.env*.test.local
+
+# Node dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Logs
+logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Local upload artifacts
+uploads/
